@@ -42,14 +42,14 @@ fun LoginScreen(
         CustomOutlinedTextField(
             value = emailValue,
             label = "Email",
-            onValueChange = { newInput -> emailValue = newInput },
+            onValueChange = { newValue -> emailValue = newValue },
             imeAction = ImeAction.Next,
             keyboardType = KeyboardType.Email,
         )
         PasswordOutlinedTextField(
             value = passwordValue,
             label = "Password",
-            onValueChange = { newInput -> passwordValue = newInput },
+            onValueChange = { newValue -> passwordValue = newValue },
             imeAction = ImeAction.Done,
         )
         TextButton(onClick = { /*TODO*/ }, modifier = Modifier.align(Alignment.End)) {

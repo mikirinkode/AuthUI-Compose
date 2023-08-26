@@ -14,9 +14,9 @@ import com.mikirinkode.authui.ui.theme.AuthenticationInterfaceComposeTheme
 
 @Composable
 fun CustomElevatedButton(
+    modifier: Modifier = Modifier,
     text: String,
     onClick: () -> Unit,
-    modifier: Modifier = Modifier
 ) {
     val buttonShape = MaterialTheme.shapes.medium
     Button(
@@ -35,7 +35,11 @@ fun CustomElevatedButton(
 fun CustomElevatedButtonPreview() {
     AuthenticationInterfaceComposeTheme {
         Column {
-            CustomElevatedButton(text = "My Button", onClick = {})
+            CustomElevatedButton(
+                text = "My Button",
+                onClick = {},
+                modifier = Modifier.padding(top = 24.dp)
+            )
         }
     }
 }

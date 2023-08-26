@@ -47,27 +47,27 @@ fun RegisterScreen(
         CustomOutlinedTextField(
             value = nameValue,
             label = "Nama",
-            onValueChange = { newInput -> nameValue = newInput },
+            onValueChange = { newValue -> nameValue = newValue },
             imeAction = ImeAction.Next,
             keyboardType = KeyboardType.Text,
         )
         CustomOutlinedTextField(
             value = emailValue,
             label = "Email",
-            onValueChange = { newInput -> emailValue = newInput },
+            onValueChange = { newValue -> emailValue = newValue },
             imeAction = ImeAction.Next,
             keyboardType = KeyboardType.Email,
         )
         PasswordOutlinedTextField(
             value = passwordValue,
             label = "Password",
-            onValueChange = { newInput -> passwordValue = newInput },
+            onValueChange = { newValue -> passwordValue = newValue },
             imeAction = ImeAction.Next,
         )
         PasswordOutlinedTextField(
                 value = passwordValue,
         label = "Konfirmasi Password",
-        onValueChange = { newInput -> passwordConfValue = newInput },
+        onValueChange = { newValue -> passwordConfValue = newValue },
         imeAction = ImeAction.Done,
         )
         CustomElevatedButton(text = "Daftar", onClick = { /*TODO*/ })
